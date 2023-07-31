@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "point_of_interests",
+  "info": {
+    "singularName": "point-of-interest",
+    "pluralName": "point-of-interests",
+    "displayName": "Point of interest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "  accommodation",
+        "  building",
+        "  busStop",
+        "  shop",
+        "  carPark",
+        "  bar",
+        "  cashPoint",
+        "  prayer",
+        "  library",
+        "  restaurant",
+        "  toilet",
+        "  other"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::floor.floor",
+      "inversedBy": "point_of_interests"
+    },
+    "location": {
+      "type": "customField",
+      "customField": "plugin::google-maps.location-picker"
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::building.building",
+      "inversedBy": "point_of_interests"
+    }
+  }
+}
