@@ -4,7 +4,7 @@
   "info": {
     "singularName": "point-of-interest",
     "pluralName": "point-of-interests",
-    "displayName": "Point of interest",
+    "displayName": "Point of Interest",
     "description": ""
   },
   "options": {
@@ -12,33 +12,34 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortName": {
+      "type": "string",
+      "required": true
+    },
+    "integerID": {
+      "type": "integer",
+      "required": true
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "bookable": {
+      "type": "boolean"
+    },
+    "libCalID": {
+      "type": "integer"
+    },
+    "mapLink": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "  accommodation",
-        "  building",
-        "  busStop",
-        "  shop",
-        "  carPark",
-        "  bar",
-        "  cashPoint",
-        "  prayer",
-        "  library",
-        "  restaurant",
-        "  toilet",
-        "  other"
-      ]
-    },
-    "image": {
+    "photo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -49,24 +50,11 @@
         "audios"
       ]
     },
-    "keywords": {
-      "type": "string"
-    },
-    "floor": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::floor.floor",
-      "inversedBy": "point_of_interests"
-    },
-    "location": {
-      "type": "customField",
-      "customField": "plugin::google-maps.location-picker"
-    },
-    "building": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::building.building",
-      "inversedBy": "point_of_interests"
+    "facilities": {
+      "displayName": "facilities",
+      "type": "component",
+      "repeatable": true,
+      "component": "facilities.facilities"
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_facilities_facilities",
+  "info": {
+    "displayName": "facilities",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
