@@ -22,13 +22,15 @@
     },
     "integerID": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "latitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "longitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "libCalID": {
       "type": "integer"
