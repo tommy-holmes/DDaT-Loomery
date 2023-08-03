@@ -18,7 +18,7 @@
     },
     "shortName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "integerID": {
       "type": "integer",
