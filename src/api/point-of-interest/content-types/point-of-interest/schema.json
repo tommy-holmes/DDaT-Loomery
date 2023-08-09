@@ -70,6 +70,24 @@
       "type": "integer",
       "max": 22,
       "min": 0
+    },
+    "buildingType": {
+      "type": "enumeration",
+      "enum": [
+        "café / restaurant",
+        "building",
+        "library",
+        "accommodation",
+        "bar",
+        "car park",
+        "transportation",
+        "shop / post office",
+        "nursery",
+        "medical centre",
+        "sports facility",
+        "student union"
+      ],
+      "required": true
     }
   }
 }
