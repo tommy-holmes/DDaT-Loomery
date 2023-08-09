@@ -74,7 +74,7 @@
     "buildingType": {
       "type": "enumeration",
       "enum": [
-        "café / restaurant",
+        "cafe / restaurant",
         "building",
         "library",
         "accommodation",
@@ -85,7 +85,11 @@
         "nursery",
         "medical centre",
         "sports facility",
-        "student union"
+        "student union",
+        "cashpoint",
+        "prayer room",
+        "room",
+        "toilet"
       ],
       "required": true
     }
