@@ -26,11 +26,11 @@
     },
     "latitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "longitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "libCalID": {
       "type": "integer"
@@ -49,12 +49,6 @@
         "audios"
       ]
     },
-    "facilities": {
-      "displayName": "facilities",
-      "type": "component",
-      "repeatable": true,
-      "component": "facilities.facilities"
-    },
     "studySpaces": {
       "type": "enumeration",
       "enum": [
@@ -71,7 +65,7 @@
       "max": 22,
       "min": 0
     },
-    "buildingType": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "cafe / restaurant",
@@ -92,6 +86,13 @@
         "toilet"
       ],
       "required": true
+    },
+    "priority": {
+      "type": "integer",
+      "required": true
+    },
+    "parentID": {
+      "type": "integer"
     }
   }
 }
