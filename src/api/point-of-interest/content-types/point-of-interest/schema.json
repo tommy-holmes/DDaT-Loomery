@@ -91,6 +91,18 @@
       "type": "integer",
       "required": true
     },
+    "parentPOI": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::point-of-interest.point-of-interest",
+      "inversedBy": "childrenPOI"
+    },
+    "childrenPOI": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::point-of-interest.point-of-interest",
+      "mappedBy": "parentPOI"
+    },
     "parentID": {
       "type": "integer"
     }
