@@ -89,7 +89,7 @@
     },
     "priority": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "parentPOI": {
       "type": "relation",
