@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stvs",
+  "info": {
+    "singularName": "stv",
+    "pluralName": "stvs",
+    "displayName": "STV"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "maxLength": 25,
+      "required": true
+    },
+    "ShortDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "IncludedInBasicMembership": {
+      "type": "boolean",
+      "required": true
+    },
+    "Bookable": {
+      "type": "boolean",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
