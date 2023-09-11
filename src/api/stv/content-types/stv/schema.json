@@ -4,7 +4,8 @@
   "info": {
     "singularName": "stv",
     "pluralName": "stvs",
-    "displayName": "STV"
+    "displayName": "STV",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,6 +31,33 @@
       "required": true
     },
     "Url": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Priority": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::point-of-interest.point-of-interest"
+    },
+    "OpeningTimes": {
+      "type": "text"
+    },
+    "ButtonText": {
       "type": "string",
       "required": true
     }
