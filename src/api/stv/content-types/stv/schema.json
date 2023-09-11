@@ -12,52 +12,52 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "maxLength": 25,
       "required": true
     },
-    "ShortDescription": {
+    "shortDescription": {
       "type": "string",
       "required": true,
       "maxLength": 60
     },
-    "IncludedInBasicMembership": {
+    "includedInBasicMembership": {
       "type": "boolean",
       "required": true
     },
-    "Bookable": {
+    "bookable": {
       "type": "boolean",
       "required": true
     },
-    "Url": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "Image": {
-      "allowedTypes": [
-        "images"
-      ],
+    "image": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "Priority": {
+    "priority": {
       "type": "integer"
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
-    "Location": {
+    "location": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::point-of-interest.point-of-interest"
     },
-    "OpeningTimes": {
+    "openingTimes": {
       "type": "text"
     },
-    "ButtonText": {
+    "buttonText": {
       "type": "string",
       "required": true
     }
