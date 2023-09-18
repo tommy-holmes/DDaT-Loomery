@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_busyness_location",
+  "info": {
+    "displayName": "Location busyness",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "examTermWeekdays": {
+      "type": "component",
+      "repeatable": false,
+      "component": "busyness.term",
+      "required": true
+    },
+    "examTermWeekends": {
+      "type": "component",
+      "repeatable": false,
+      "component": "busyness.term",
+      "required": true
+    },
+    "ordinaryTermWeekdays": {
+      "type": "component",
+      "repeatable": false,
+      "component": "busyness.term",
+      "required": true
+    },
+    "ordinaryTermWeekends": {
+      "type": "component",
+      "repeatable": false,
+      "component": "busyness.term",
+      "required": true
+    },
+    "holidayPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ],
+      "required": true
+    }
+  }
+}

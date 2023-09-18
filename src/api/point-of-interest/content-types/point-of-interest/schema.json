@@ -103,8 +103,10 @@
       "target": "api::point-of-interest.point-of-interest",
       "mappedBy": "parentPOI"
     },
-    "parentID": {
-      "type": "integer"
+    "busyness": {
+      "type": "component",
+      "repeatable": false,
+      "component": "busyness.location"
     }
   }
 }

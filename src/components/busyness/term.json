@@ -1,0 +1,115 @@
+{
+  "collectionName": "components_busyness_term",
+  "info": {
+    "displayName": "Term busyness",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "from08": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from11": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from14": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from17": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from20": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from23": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from02": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    },
+    "from05": {
+      "type": "enumeration",
+      "enum": [
+        "Extremely busy",
+        "Very busy",
+        "Busy",
+        "Moderately busy",
+        "Moderately quiet",
+        "Quiet",
+        "Very quiet",
+        "Extremely quiet"
+      ]
+    }
+  }
+}
