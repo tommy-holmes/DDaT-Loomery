@@ -107,6 +107,12 @@
       "type": "component",
       "repeatable": false,
       "component": "busyness.location"
+    },
+    "description": {
+      "type": "text"
+    },
+    "openingTimesUrl": {
+      "type": "string"
     }
   }
 }
