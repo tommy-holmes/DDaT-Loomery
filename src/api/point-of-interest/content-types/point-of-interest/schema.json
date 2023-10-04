@@ -113,6 +113,18 @@
     },
     "openingTimesUrl": {
       "type": "string"
+    },
+    "isOffCampus": {
+      "type": "boolean",
+      "default": false
+    },
+    "isAccessible": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPostGradOnly": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
