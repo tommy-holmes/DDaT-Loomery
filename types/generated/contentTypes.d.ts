@@ -722,6 +722,51 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
+export interface ApiMunchBoxMunchBox extends Schema.CollectionType {
+  collectionName: 'munch-boxes';
+  info: {
+    singularName: 'munch-box';
+    pluralName: 'munch-boxes';
+    displayName: 'MunchBox';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    mondayFrom: Attribute.Time;
+    tuesdayFrom: Attribute.Time;
+    wednesdayFrom: Attribute.Time;
+    thursdayFrom: Attribute.Time;
+    fridayFrom: Attribute.Time;
+    saturdayFrom: Attribute.Time;
+    sundayFrom: Attribute.Time;
+    image: Attribute.Media & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
+    locations: Attribute.Relation<
+      'api::munch-box.munch-box',
+      'oneToMany',
+      'api::point-of-interest.point-of-interest'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::munch-box.munch-box',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::munch-box.munch-box',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPointOfInterestPointOfInterest
   extends Schema.CollectionType {
   collectionName: 'point_of_interests';
@@ -802,52 +847,6 @@ export interface ApiPointOfInterestPointOfInterest
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::point-of-interest.point-of-interest',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiRepeatingEventRepeatingEvent extends Schema.CollectionType {
-  collectionName: 'repeating_events';
-  info: {
-    singularName: 'repeating-event';
-    pluralName: 'repeating-events';
-    displayName: 'RepeatingEvent';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    mondayFrom: Attribute.Time;
-    tuesdayFrom: Attribute.Time;
-    wednesdayFrom: Attribute.Time;
-    thursdayFrom: Attribute.Time;
-    fridayFrom: Attribute.Time;
-    saturdayFrom: Attribute.Time;
-    sundayFrom: Attribute.Time;
-    image: Attribute.Media & Attribute.Required;
-    description: Attribute.Text & Attribute.Required;
-    point_of_interest: Attribute.Relation<
-      'api::repeating-event.repeating-event',
-      'oneToOne',
-      'api::point-of-interest.point-of-interest'
-    >;
-    location: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::repeating-event.repeating-event',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::repeating-event.repeating-event',
       'oneToOne',
       'admin::user'
     > &
@@ -942,8 +941,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::event.event': ApiEventEvent;
+      'api::munch-box.munch-box': ApiMunchBoxMunchBox;
       'api::point-of-interest.point-of-interest': ApiPointOfInterestPointOfInterest;
-      'api::repeating-event.repeating-event': ApiRepeatingEventRepeatingEvent;
       'api::stv.stv': ApiStvStv;
       'api::term.term': ApiTermTerm;
     }

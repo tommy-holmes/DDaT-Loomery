@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "repeating_events",
+  "collectionName": "munch-boxes",
   "info": {
-    "singularName": "repeating-event",
-    "pluralName": "repeating-events",
-    "displayName": "RepeatingEvent",
+    "singularName": "munch-box",
+    "pluralName": "munch-boxes",
+    "displayName": "MunchBox",
     "description": ""
   },
   "options": {
@@ -38,24 +38,21 @@
       "type": "time"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "description": {
       "type": "text",
       "required": true
     },
-    "point_of_interest": {
+    "locations": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::point-of-interest.point-of-interest"
-    },
-    "location": {
-      "type": "string"
     }
   }
 }
