@@ -125,6 +125,11 @@
     "isPostGradOnly": {
       "type": "boolean",
       "default": false
+    },
+    "openingTimes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "opening-times.opening-times"
     }
   }
 }

@@ -137,11 +137,36 @@ export interface BusynessTerm extends Schema.Component {
   };
 }
 
+export interface OpeningTimesOpeningTimes extends Schema.Component {
+  collectionName: 'components_opening_times_opening_times';
+  info: {
+    displayName: 'Opening times';
+    icon: 'clock';
+  };
+  attributes: {
+    mondayFrom: Attribute.Time;
+    mondayTo: Attribute.Time;
+    tuesdayFrom: Attribute.Time;
+    tuesdayTo: Attribute.Time;
+    wednesdayFrom: Attribute.Time;
+    wednesdayTo: Attribute.Time;
+    thursdayFrom: Attribute.Time;
+    thursdayTo: Attribute.Time;
+    fridayFrom: Attribute.Time;
+    fridayTo: Attribute.Time;
+    saturdayFrom: Attribute.Time;
+    saturdayTo: Attribute.Time;
+    sundayFrom: Attribute.Time;
+    sundayTo: Attribute.Time;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'busyness.location': BusynessLocation;
       'busyness.term': BusynessTerm;
+      'opening-times.opening-times': OpeningTimesOpeningTimes;
     }
   }
 }

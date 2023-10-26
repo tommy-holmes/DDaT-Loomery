@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_opening_times_opening_times",
+  "info": {
+    "displayName": "Opening times",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "mondayFrom": {
+      "type": "time"
+    },
+    "mondayTo": {
+      "type": "time"
+    },
+    "tuesdayFrom": {
+      "type": "time"
+    },
+    "tuesdayTo": {
+      "type": "time"
+    },
+    "wednesdayFrom": {
+      "type": "time"
+    },
+    "wednesdayTo": {
+      "type": "time"
+    },
+    "thursdayFrom": {
+      "type": "time"
+    },
+    "thursdayTo": {
+      "type": "time"
+    },
+    "fridayFrom": {
+      "type": "time"
+    },
+    "fridayTo": {
+      "type": "time"
+    },
+    "saturdayFrom": {
+      "type": "time"
+    },
+    "saturdayTo": {
+      "type": "time"
+    },
+    "sundayFrom": {
+      "type": "time"
+    },
+    "sundayTo": {
+      "type": "time"
+    }
+  }
+}

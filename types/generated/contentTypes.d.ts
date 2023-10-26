@@ -836,6 +836,7 @@ export interface ApiPointOfInterestPointOfInterest
     isOffCampus: Attribute.Boolean & Attribute.DefaultTo<false>;
     isAccessible: Attribute.Boolean & Attribute.DefaultTo<false>;
     isPostGradOnly: Attribute.Boolean & Attribute.DefaultTo<false>;
+    openingTimes: Attribute.Component<'opening-times.opening-times'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
